@@ -111,7 +111,7 @@ Example of `VCAP_APPLICATION`:
   ```
 
 ## <a name="access-database"></a> Lab - Load data from a database
-Very simple R/Shiny application to demonstrate how to get it running in PCF thanks to https://github.com/wjjung317/heroku-buildpack-r.
+Very simple R/Shiny application to demonstrate how to get it running in PCF thanks to https://github.com/cloudfoundry/r-buildpack.
 
 1. `cd example-01`
 2. `cf push`
@@ -131,7 +131,7 @@ Very simple R/Shiny application to demonstrate how to get it running in PCF than
 ### Connect to a managed database
 
 1. Create database instance
-  `cf create-service p-mysql pre-existing-plan r-db`
+  `cf create-service p-mysql 100mb r-db`
 2. Bind application to the database instance
   `cf bind-service example-01 r-db ` or add it to the `manifest.yml`
 3. Check the credentials
@@ -155,7 +155,7 @@ Very simple R/Shiny application to demonstrate how to get it running in PCF than
 ## <a name="access-files"></a>Lab - Manipulate files from an external file system
 
 Reference documentation:
-- https://docs.pivotal.io/pivotalcf/1-11/devguide/services/using-vol-services.html
+- https://docs.pivotal.io/pivotalcf/2-3/devguide/services/using-vol-services.html
 
 Cloud Foundry application developers may want their applications to mount one or more volumes in order to write to a reliable, non-ephemeral file system. If we expose NFSv3 file systems in the marketplace as a service, developers can create a file system on-demand and in an automated fashion.
 
