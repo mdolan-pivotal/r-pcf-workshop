@@ -49,10 +49,10 @@ Reference documentation:
 CloudFoundry excels at the developer experience: deploy, update and scale applications on-demand regardless of the application stack (java, php, node.js, go, etc).  We are going to learn how to deploy static web pages, and R applications without writing any logic/script to make it happen.
 
 Reference documentation:
-- [Using Apps Manager](http://docs.pivotal.io/pivotalcf/1-9/console/index.html)
-- [Using cf CLI](http://docs.pivotal.io/pivotalcf/1-9/cf-cli/index.html)
-- [Deploying Applications](http://docs.pivotal.io/pivotalcf/1-9/devguide/deploy-apps/deploy-app.html)
-- [Deploying with manifests](http://docs.pivotal.io/pivotalcf/1-9/devguide/deploy-apps/manifest.html)
+- [Using Apps Manager](http://docs.pivotal.io/pivotalcf/2.3/console/index.html)
+- [Using cf CLI](http://docs.pivotal.io/pivotalcf/2.3/cf-cli/index.html)
+- [Deploying Applications](http://docs.pivotal.io/pivotalcf/2.3/devguide/deploy-apps/deploy-app.html)
+- [Deploying with manifests](http://docs.pivotal.io/pivotalcf/2.3/devguide/deploy-apps/manifest.html)
 
 # <a name="Deploy-web-site"></a> Lab - Deploy web site
 Very simple static web site to get used to Cloud Foundry command-line and concepts and also to see that the developers experience is the same regardless of the type of application we are deploying.
@@ -265,7 +265,7 @@ applications:
 ```
 
 
-*Things we can do with the manifest.yml file* (more details [here](http://docs.pivotal.io/pivotalcf/1-9/devguide/deploy-apps/manifest.html))
+*Things we can do with the manifest.yml file* (more details [here](http://docs.pivotal.io/pivotalcf/2.3/devguide/deploy-apps/manifest.html))
 - [ ] simplify push command with manifest files (`-f <manifest>`, `-no-manifest`)
 - [ ] register applications with DNS (`domain`, `domains`, `host`, `hosts`, `no-hostname`, `random-route`, `routes`). We can register http and tcp endpoints.
 - [ ] deploy applications without registering with DNS (`no-route`) (for instance, a messaging based server which does not listen on any port)
