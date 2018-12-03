@@ -3,7 +3,6 @@ library(RMySQL)
 source("mysql.R", local=environment())
 
 InitMySQL()
-
 # Define server logic required to generate and plot a random distribution
 shinyServer(function(input, output) {
 
