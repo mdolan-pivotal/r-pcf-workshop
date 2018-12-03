@@ -42,6 +42,7 @@ PCF workshop for R Developers
 Reference documentation:
 - https://docs.pivotal.io
 - [Elastic Runtime concepts](http://docs.pivotal.io/pivotalcf/concepts/index.html)
+- https://pivotalsoftware.github.io/gp-r/#shiny_cf_requirements
 
 
 # Deploying simple apps
